@@ -1,0 +1,136 @@
+\documentclass{ColorMath}
+%\excludecomment{analysis}
+%\excludecomment{proof}
+%\excludecomment{solution}
+%\excludecomment{note}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{ColorMath模板介绍}
+
+\section{模板概述}
+
+ColorMath是一个专为高中数学讲义设计的\LaTeX{}模板。该模板基于ctexbook文档类，针对中文数学教学内容进行了优化，提供了丰富的数学环境和命令，帮助教师制作高质量的数学讲义。
+
+\section{模板特色}
+
+本模板具有以下特色功能：
+
+\begin{itemize}
+    \item 完整的中文数学环境支持
+    \item 丰富的定理、例题、练习等环境
+    \item 自定义的数学符号和命令
+    \item 优化的页面布局和字体设置
+    \item 支持彩色超链接和书签
+\end{itemize}
+
+\section{基本环境示例}
+
+\subsection{定理环境}
+
+\begin{definition}
+    设$f(x)$是定义在区间$I$上的函数，如果对于$I$内的任意两点$x_1, x_2$，当$x_1 < x_2$时，都有$f(x_1) < f(x_2)$，则称$f(x)$在区间$I$上是\textbf{严格递增}的。
+\end{definition}
+
+\begin{theorem}
+    设函数$f(x)$在区间$[a,b]$上连续，在$(a,b)$内可导，如果$f'(x) > 0$在$(a,b)$内恒成立，则$f(x)$在$[a,b]$上严格递增。
+\end{theorem}
+
+\begin{proof}
+    由拉格朗日中值定理，对于$[a,b]$内任意两点$x_1 < x_2$，存在$\xi \in (x_1, x_2)$，使得
+    $$f(x_2) - f(x_1) = f'(\xi)(x_2 - x_1)$$
+    由于$f'(\xi) > 0$且$x_2 - x_1 > 0$，所以$f(x_2) - f(x_1) > 0$，即$f(x_2) > f(x_1)$。
+\end{proof}
+
+\subsection{例题环境}
+
+\begin{example}
+    求函数$f(x) = x^3 - 3x^2 + 2$的单调区间。
+\end{example}
+
+\begin{solution}
+    首先求导数：$f'(x) = 3x^2 - 6x = 3x(x-2)$
+
+    令$f'(x) = 0$，得$x = 0$或$x = 2$。
+
+    列表分析：
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            $x$     & $(-\infty, 0)$ & $(0, 2)$ & $(2, +\infty)$ \\
+            \hline
+            $f'(x)$ & $+$            & $-$      & $+$            \\
+            \hline
+            $f(x)$  & 递增             & 递减       & 递增             \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    因此，$f(x)$的单调递增区间为$(-\infty, 0)$和$(2, +\infty)$，单调递减区间为$(0, 2)$。
+\end{solution}
+
+\subsection{练习环境}
+
+\begin{exercise}
+    已知函数$g(x) = 2x^3 - 6x^2 + 6x - 1$，求：
+    \begin{enumerate}
+        \item $g(x)$的导数
+        \item $g(x)$的单调区间
+        \item $g(x)$的极值
+    \end{enumerate}
+\end{exercise}
+
+\section{自定义数学符号}
+
+本模板提供了一些实用的自定义数学符号：
+
+\begin{itemize}
+    \item 平行且等于：$a \pxqdy b$（使用命令\verb|\pxqdy|）
+    \item 平行四边形：$\pxsbx ABCD$（使用命令\verb|\pxsbx|）
+    \item 弧段：$\arc{AB}$（使用命令\verb|\arc{AB}|）
+    \item 显示样式求和：$\dsum_{i=1}^n i$（使用命令\verb|\dsum|）
+    \item 显示样式乘积：$\dprod_{i=1}^n i$（使用命令\verb|\dprod|）
+\end{itemize}
+
+
+\section{问题与分析}
+
+\begin{question}
+    如何判断函数$f(x) = \frac{x^2 - 1}{x^2 + 1}$的奇偶性？
+\end{question}
+
+\begin{analysis}
+    要判断函数的奇偶性，需要：
+    \begin{enumerate}
+        \item 确定函数的定义域是否关于原点对称
+        \item 计算$f(-x)$
+        \item 比较$f(-x)$与$f(x)$的关系
+    \end{enumerate}
+\end{analysis}
+
+\begin{note}
+    在使用本模板时，可以通过注释掉文档开头的\verb|\excludecomment|命令来控制哪些环境在最终文档中显示。
+
+    例如，如果要隐藏所有的解答过程，可以取消注释\verb|\excludecomment{solution}|。
+\end{note}
+
+\chapter{ColorMath系列介绍}
+\section{RedMath}
+结合文献打造高质量教学设计。
+
+\section{CyanMath}
+主要以初中竞赛小蓝本为主要参考资料，用于初中竞赛班讲义的制作。
+
+\section{BlueMath}
+专注数学竞赛一试讲义，参考书目包括：
+\begin{itemize}
+    \item 人教A版教材
+    \item 全品高考复习手册
+    \item 高中小蓝本
+\end{itemize}
+
+\section{PurpleMath}
+二试题集，参考《数学竞赛研究教程》。
+
+\end{document}

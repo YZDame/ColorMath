@@ -1,4 +1,4 @@
-# 🌈ColorMath：我的数学教学资源库
+# 🌈ColorMath：高中数学讲义模版
 
 ## [🔴RedMath](https://github.com/YZDame/RedMath)
 
@@ -18,8 +18,3 @@
 - 二试题集
 - 参考书目:数学竞赛研究教程
 
-
-
-## 未来计划
-
-推出一个讲义文档类 `CyberMath.cls` ，再根据不同的格式需求，选择性添加各自的`.sty`文件

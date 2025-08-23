@@ -1,20 +1,15 @@
 # 🌈ColorMath：高中数学讲义模版
 
-## [🔴RedMath](https://github.com/YZDame/RedMath)
+## 使用方法及效果展示
 
-- 结合文献打造高质量教学设计
+参见[main.pdf](https://github.com/YZDame/ColorMath/blob/main/main.pdf)
 
-## [🟢CyanMath](https://github.com/YZDame/CyanMath)
+## 目前在推进的几个项目
 
-- 主要以初中竞赛小蓝本为主要参考资料，用于初中竞赛班讲义
+### [🐍Slytherin](https://github.com/YZDame/Slytherin)
 
-## [🔵BlueMath](https://github.com/YZDame/BlueMath)
+### [🟢CyanMath](https://github.com/YZDame/CyanMath)
 
-- 一试讲义
-- 参考书目：人教A版教材,全品高考复习手册,高中数学竞赛小蓝本
+### [🔴RedMath](https://github.com/YZDame/RedMath)
 
-## 🟣PurpleMath
-
-- 二试题集
-- 参考书目:数学竞赛研究教程
-
+### [🔵BlueMath](https://github.com/YZDame/BlueMath)

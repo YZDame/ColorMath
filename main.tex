@@ -1,4 +1,5 @@
-\documentclass{ColorMath}
+\documentclass[fancy]{ColorMath} % 花哨模式
+% \\documentclass{ColorMath} % 极简模式
 %\excludecomment{analysis}
 %\excludecomment{proof}
 %\excludecomment{solution}
@@ -7,13 +8,13 @@
 \maketitle
 \tableofcontents
 
-\chapter{ColorMath模板介绍}
+\section{ColorMath模板介绍}
 
-\section{模板概述}
+\subsection{模板概述}
 
-ColorMath是一个专为高中数学讲义设计的\LaTeX{}模板。该模板基于ctexbook文档类，针对中文数学教学内容进行了优化，提供了丰富的数学环境和命令，帮助教师制作高质量的数学讲义。
+ColorMath是一个专为高中数学讲义设计的\LaTeX{}模板。该模板基于ctexart文档类，针对中文数学教学内容进行了优化，提供了丰富的数学环境和命令，帮助教师制作高质量的数学讲义。
 
-\section{模板特色}
+\subsection{模板特色}
 
 本模板具有以下特色功能：
 
@@ -25,9 +26,9 @@ ColorMath是一个专为高中数学讲义设计的\LaTeX{}模板。该模板基
     \item 支持彩色超链接和书签
 \end{itemize}
 
-\section{基本环境示例}
+\subsection{基本环境示例}
 
-\subsection{定理环境}
+{定理环境}
 
 \begin{definition}
     设$f(x)$是定义在区间$I$上的函数，如果对于$I$内的任意两点$x_1, x_2$，当$x_1 < x_2$时，都有$f(x_1) < f(x_2)$，则称$f(x)$在区间$I$上是\textbf{严格递增}的。
@@ -43,7 +44,7 @@ ColorMath是一个专为高中数学讲义设计的\LaTeX{}模板。该模板基
     由于$f'(\xi) > 0$且$x_2 - x_1 > 0$，所以$f(x_2) - f(x_1) > 0$，即$f(x_2) > f(x_1)$。
 \end{proof}
 
-\subsection{例题环境}
+\subsubsection{例题环境}
 
 \begin{example}
     求函数$f(x) = x^3 - 3x^2 + 2$的单调区间。
@@ -70,7 +71,7 @@ ColorMath是一个专为高中数学讲义设计的\LaTeX{}模板。该模板基
     因此，$f(x)$的单调递增区间为$(-\infty, 0)$和$(2, +\infty)$，单调递减区间为$(0, 2)$。
 \end{solution}
 
-\subsection{练习环境}
+\subsubsection{练习环境}
 
 \begin{exercise}
     已知函数$g(x) = 2x^3 - 6x^2 + 6x - 1$，求：
@@ -81,7 +82,7 @@ ColorMath是一个专为高中数学讲义设计的\LaTeX{}模板。该模板基
     \end{enumerate}
 \end{exercise}
 
-\section{自定义数学符号}
+\subsection{自定义数学符号}
 
 本模板提供了一些实用的自定义数学符号：
 
@@ -94,11 +95,11 @@ ColorMath是一个专为高中数学讲义设计的\LaTeX{}模板。该模板基
 \end{itemize}
 
 
-\section{问题与分析}
+\subsection{问题与分析}
 
-\begin{question}
+\begin{example}
     如何判断函数$f(x) = \frac{x^2 - 1}{x^2 + 1}$的奇偶性？
-\end{question}
+\end{example}
 
 \begin{analysis}
     要判断函数的奇偶性，需要：
@@ -115,14 +116,14 @@ ColorMath是一个专为高中数学讲义设计的\LaTeX{}模板。该模板基
     例如，如果要隐藏所有的解答过程，可以取消注释\verb|\excludecomment{solution}|。
 \end{note}
 
-\chapter{ColorMath系列介绍}
-\section{RedMath}
+\section{ColorMath系列介绍}
+\subsection{RedMath}
 结合文献打造高质量教学设计。
 
-\section{CyanMath}
+\subsection{CyanMath}
 主要以初中竞赛小蓝本为主要参考资料，用于初中竞赛班讲义的制作。
 
-\section{BlueMath}
+\subsection{BlueMath}
 专注数学竞赛一试讲义，参考书目包括：
 \begin{itemize}
     \item 人教A版教材
@@ -130,7 +131,5 @@ ColorMath是一个专为高中数学讲义设计的\LaTeX{}模板。该模板基
     \item 高中小蓝本
 \end{itemize}
 
-\section{PurpleMath}
-二试题集，参考《数学竞赛研究教程》。
 
 \end{document}
